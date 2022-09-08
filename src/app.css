@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-full bg-slate-50;
+  }
+}
+@layer components {
+  .header-container {
+    @apply pb-1 rounded-lg bg-header_gradient_border;
+  }
+  .header {
+    @apply flex w-full h-full flex-row items-center justify-between py-3 px-4 bg-[#181818] text-white rounded-b-[.5rem] flex-none;
+  }
+  .nav {
+    @apply flex justify-center items-center font-semibold flex-1 font-sans;
+  }
+  .nav-bedroom-link-container {
+    @apply nav-link flex justify-evenly items-center w-28;
+  }
+  .nav-bedroom-link {
+    @apply w-fit text-transparent bg-clip-text bg-navlink_bedroom_gradient font-bold;
+  }
+  .nav-link {
+    @apply text-center tracking-widest my-1 mx-2;
+  }
+  .opensea-button-container {
+    @apply flex justify-end items-center w-[7.25rem] pr-2 select-none;
+  }
+  .opensea-button {
+    @apply flex justify-center items-center w-[2.625rem] h-[2.625rem] bg-Opensea_gradient_button rounded-lg flex-none;
+  }
+  .carousel-btn {
+    @apply bg-black bg-opacity-[.05] w-2/12 h-1/2 text-xl hover:bg-opacity-40;
+  }
+  .carousel-imgs {
+    @apply w-[136.72px] h-[179.65px];
+  }
+  .dot {
+    @apply h-2 w-2 m-1 rounded-full bg-[#757474];
+  }
+  .footer-nav-link {
+    @apply w-[2.625rem] h-[2.625rem] m-0.5 rounded-lg flex justify-center items-center p-1 select-none;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b6b6b621;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3e3e3ea3;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
